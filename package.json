@@ -1,11 +1,15 @@
 {
   "name": "discordsdk-tamplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tamplate to create EmbeddedApp SDK using Rust in server-side",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "pnpm run --filter \"./packages/**\" --parallel dev",
+    "tunnel": "cloudflared tunnel --url http://localhost:3000"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "KingTimer12",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
