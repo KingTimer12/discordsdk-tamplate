@@ -26,7 +26,7 @@ async fn main() -> Result<()> {
     dotenv().ok();
 
     HttpServer::new(|| App::new().service(token))
-        .bind(("127.0.0.1", 8080))?
+        .bind(("127.0.0.1", 3001))?
         .run()
         .await
 }
